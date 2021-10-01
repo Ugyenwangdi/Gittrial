@@ -1,0 +1,90 @@
+
+C:\Users\user\Desktop\GitT>git init
+Initialized empty Git repository in C:/Users/user/Desktop/GitT/.git/
+
+C:\Users\user\Desktop\GitT>git add .
+
+C:\Users\user\Desktop\GitT>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Mycode.txt
+
+
+C:\Users\user\Desktop\GitT>git commit -m "Initial commit"
+[master (root-commit) f50cf4f] Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Mycode.txt
+
+C:\Users\user\Desktop\GitT>git log
+commit f50cf4f72d8b70e6e5d96398c0f5f4515c1dbdde (HEAD -> master)
+Author: Ugyenwangdi <12190105.gcit@rub.edu.bt>
+Date:   Fri Oct 1 11:39:10 2021 +0600
+
+    Initial commit
+
+C:\Users\user\Desktop\GitT>git log --oneline
+f50cf4f (HEAD -> master) Initial commit
+
+C:\Users\user\Desktop\GitT>git add .
+
+C:\Users\user\Desktop\GitT>git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Mycode.txt
+
+
+C:\Users\user\Desktop\GitT>git commit -m
+error: switch `m' requires a value
+
+C:\Users\user\Desktop\GitT>git commit -m "background changed"
+[master 28e88c1] background changed
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+C:\Users\user\Desktop\GitT>git log --oneline
+28e88c1 (HEAD -> master) background changed
+f50cf4f Initial commit
+
+C:\Users\user\Desktop\GitT>git add .
+
+C:\Users\user\Desktop\GitT>git commit -m "New code added"
+[master 6e09147] New code added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 MyNewCode.txt
+
+C:\Users\user\Desktop\GitT>git log --oneline
+6e09147 (HEAD -> master) New code added
+28e88c1 background changed
+f50cf4f Initial commit
+
+C:\Users\user\Desktop\GitT>git checkout .
+Updated 0 paths from the index
+
+C:\Users\user\Desktop\GitT>git checkout .
+Updated 1 path from the index
+
+C:\Users\user\Desktop\GitT>git reset 28e88c1 --hard
+HEAD is now at 28e88c1 background changed
+
+C:\Users\user\Desktop\GitT>git log --oneline
+28e88c1 (HEAD -> master) background changed
+f50cf4f Initial commit
+
+C:\Users\user\Desktop\GitT>git remote add origin https://github.com/wulfi25t/Myapp.git
+
+C:\Users\user\Desktop\GitT>git push -u origin master
+
+
+
+C:\Users\user\Desktop\GitT>git add .				// add new 
+
+C:\Users\user\Desktop\GitT>git commit -m "background added"
+[master c9b5a53] background added
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Newbackground.txt
+
+C:\Users\user\Desktop\GitT>git push -u origin master
